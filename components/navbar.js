@@ -1,15 +1,14 @@
 import Link from 'next/link';
-import styles from '@/styles/Navbar.module.css';
 
 export default function Navbar() {
   return (
-    <nav className={styles.nav}>
-      <Link className={styles.logo} href="/">CodeOrchard</Link>
-      <ul className={styles.menu}>
-        <li className={styles.menuItem}>
+    <nav className='text-center'>
+      <Link href="/">CodeOrchard</Link>
+      <ul>
+        <li>
           <Link href="/varieties">Varieties</Link>
         </li>
-        <li className={styles.menuItem}>
+        <li>
           <Link href="/about">About</Link>
         </li>
       </ul>
